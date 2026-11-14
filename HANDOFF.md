@@ -13,7 +13,11 @@ This document supersedes `horn.md`, which is the running log of how the design g
 
 ## 1. What the part is
 
-A bike-handlebar-mounted parabolic horn for a 50 mm tweeter. It clamps to the bar with a zip tie, holds the tweeter in a cavity at the back, and is closed by a screw-on cap. The user's brief (`prompt` in this folder, verbatim) asked for:
+A bike-handlebar-mounted parabolic horn for **the tweeter from a 2012 VW Tiguan** — a Ø50 mm round body, 18 mm tall, with a 9 mm wiring notch on its side. It clamps to the bar with a zip tie, holds the tweeter in a cavity at the back, and is closed by a screw-on cap.
+
+**A 2014 Tiguan tweeter fits with only minimal changes** — the cavity size (`cav_d`, `tw_h`, and `wire_w` if its notch differs). Nothing else in the part is affected: the horn flare, handlebar mount, zip-tie tunnel and thread all carry over unchanged.
+
+The user's brief (`prompt` in this folder, verbatim) asked for:
 
 > It is to fit on a bike handlebar with a half moon shape containing a tunnel for a zip tie. The handlebar clamp part does not need to extend around the whole handlebar.
 >
@@ -90,8 +94,8 @@ All sketch geometry is driven by these, so most changes are a one-line edit. In 
 
 | name | value | effect |
 |---|---|---|
-| `tw_h` | 18 | cavity depth from the throat plate down to z 0 |
-| `cav_d` | 50.4 | tweeter cavity Ø (50 + 0.4 clearance) |
+| `tw_h` | 18 | cavity depth from the throat plate down to z 0 — **tweeter-fit knob** |
+| `cav_d` | 50.4 | tweeter cavity Ø, 50 + 0.4 clearance — **tweeter-fit knob** |
 | `base_d` | 62 | base and cap outside Ø |
 | `plate_t` | 3 | throat plate thickness |
 | `throat_d` | 40 | horn throat Ø |
@@ -157,7 +161,8 @@ There are stale lock files (`.~tweeter-horn-v2.sc.lock`, `.~Tweeter horn v3.sc.l
 ## 8. Open items
 
 1. **Print and test** the current pair: cap should screw on by hand, tweeter should sit flush with 18.5 mm of cavity.
-2. **Thread length** — 3.25 turns is workable but not generous. The cap's rim can rise another 1.5 mm (to z +3.5) with the same notch extended, without making the part longer.
-3. **Fit** — adjust via the `Collar skim` radius as in §4.
-4. **The zip-tie tunnel direction** was never explicitly confirmed: it currently runs vertically through the block, behind the bar, so the tie wraps the bar in the plane of the saddle. If the user meant it parallel to the bar, it needs changing.
-5. **Clean up** everything under "History / superseded" once the print is signed off — the two big backups alone are 44 MB.
+2. **2014 Tiguan variant** — the design is built around the 2012 Tiguan tweeter and said to fit the 2014 one with minimal changes, but **the 2014 unit's actual dimensions are not recorded here**. Measure its body Ø and height, then set `cav_d` and `tw_h` (and `wire_w` if its wiring notch is a different width); nothing else should need touching. Re-export both STLs if the cavity changes.
+3. **Thread length** — 3.25 turns is workable but not generous. The cap's rim can rise another 1.5 mm (to z +3.5) with the same notch extended, without making the part longer.
+4. **Fit** — adjust via the `Collar skim` radius as in §4.
+5. **The zip-tie tunnel direction** was never explicitly confirmed: it currently runs vertically through the block, behind the bar, so the tie wraps the bar in the plane of the saddle. If the user meant it parallel to the bar, it needs changing.
+6. **Clean up** everything under "History / superseded" once the print is signed off — the two big backups alone are 44 MB.
