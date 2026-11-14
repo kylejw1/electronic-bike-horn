@@ -17,8 +17,9 @@ A bike-handlebar-mounted parabolic horn for **the tweeter from a 2012 VW Tiguan*
 
 **A 2014 Tiguan tweeter fits with only minimal changes** — the cavity size (`cav_d`, `tw_h`, and `wire_w` if its notch differs). Nothing else in the part is affected: the horn flare, handlebar mount, zip-tie tunnel and thread all carry over unchanged.
 
-The user's brief (`prompt` in this folder, verbatim) asked for:
+**Driving it:** the horn is passive, so it needs an amplifier. The user reports it works well with an **MP3 board such as the DY-F20L running at 12 V or more**; **a 5 W board is too quiet**, and higher voltage may be better still. This is electrical — nothing in the model depends on it.
 
+The user's brief (`prompt` in this folder, verbatim) asked for:
 > It is to fit on a bike handlebar with a half moon shape containing a tunnel for a zip tie. The handlebar clamp part does not need to extend around the whole handlebar.
 >
 > I like the parabolic horn itself. […] fits a 50mm round tweeter that's 18mm tall. It has a cutout on the side for wiring that is 9mm wide tangential to the circular body, and starts 6mm from the top of the tweeter and finishes 5mm from the bottom.

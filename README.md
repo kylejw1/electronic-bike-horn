@@ -34,6 +34,15 @@ Both are already exported from `tweeter-horn-v2.sc`. If you change the model, re
 3. Screw the cap on — **M56×2**, about 3¼ turns, hand-tight. 0.2 mm of printed clearance is built in, so it should go on without forcing.
 4. Zip tie through the tunnel in the mount block and around the bar; the block's Ø32 cradle takes the bar.
 
+## Driving it
+
+The horn is passive — it only loads the tweeter, so it needs an amplifier.
+
+- An **MP3 board such as the DY-F20L** works well.
+- Run it at **12 V or more**. Below that it is noticeably quiet.
+- **A 5 W board is too quiet** — don't bother with one.
+- **Higher voltage may be better still** — go up only as far as the board and the tweeter are rated for.
+
 ## Key dimensions
 
 | | |
@@ -51,7 +60,7 @@ Both are already exported from `tweeter-horn-v2.sc`. If you change the model, re
 
 Most sizes are named parameters in `tweeter-horn-v2.sc` — `base_d`, `mouth_d`, `depth`, `bar_d`, `cap_t` and so on — so a change is usually one edit.
 
-Two things to know before you try:
+A few things to know before you try:
 
 - Changing `mouth_d` or `depth` alone **distorts the bell**, because the two flare arcs have fixed control points. Ask for those two to be changed together.
 - If the cap is **tight or loose**, change the `Collar skim` radius (currently **27.8**) by ±0.1 — lower is looser. Leave the cap's thread alone.
